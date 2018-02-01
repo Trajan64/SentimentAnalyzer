@@ -33,11 +33,13 @@ to observe some of the data produced by the sentiment analyzer:
 • If we add the option `-top20`, the script will output the first twenty words holding the
 highest good/bad scores:
 Example:
+
 `python main.py -analyzeXML -top20`
 
 • The option -get-lexicon will output the entire scored lexicon built during the
 unsupervised learning procedure.
 Example:
+
 `python main.py -analyzeXML -get-lexicon`
 
 • The option `-get-infos` will output relative informations regarding a comment whose
@@ -47,10 +49,12 @@ _ the comment's content.
 _ the comment's computed emotional polarity score.
 _ the comment's referential (hand-gathered) sentiment value.
 Example:
+
 `python main.py -analyzeXML -get-infos 2`
 
 • Finally, the option -get-all-infos will do the same operation as the one stated
 before. Except that here, the program will output informations regarding all the
 comments inside the XML corpus.
 Example:
+
 `python main.py -analyzeXML -get-all-infos`
